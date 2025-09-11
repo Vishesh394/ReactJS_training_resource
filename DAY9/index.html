@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <p id="bg-red"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis, et beatae provident, soluta quaerat numquam vero quibusdam voluptate repellat ex similique, iste atque doloremque minus laudantium ipsam quos fugiat.</p>
+    <p id="fs-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nobis nulla ullam dolor et libero voluptas ut aperiam autem recusandae!</p>
+    <button onclick="bgRed()">Change background color</button> <!--here event = onclick and br-red() is a function called when we press button-->
+    <button onclick="fontSize()">Change font size </button>
+    
+</body>
+<script>
+    function bgRed(){
+        var bg=document.getElementById("bg-red")
+        bg.style.backgroundColor="red"
+    }
+    function fontSize(){
+        var fs=document.getElementById("fs-50")
+        fs.style.fontSize="50px"
+    }
+    
+</script>
+</html>

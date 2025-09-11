@@ -1,0 +1,49 @@
+h2{
+    background-color: black;
+    color: yellow;
+}
+.highlight{
+    background-color:black ;
+    color:aqua;
+
+}
+#p1{
+    background-color: cornflowerblue;
+    color: black;
+    font-size:50px;
+
+
+
+}
+#p2{
+    background-color:yellow ;
+    color: black;
+    font-size: large;
+}
+div{
+    background-color: greenyellow;
+
+}
+span{
+    font-size: 50px;
+
+}
+.container{
+    margin: auto;
+    width: 90%;
+
+}
+.row{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+.col{
+    flex-basis: 20%;
+}
+@media(max-width:992px){
+    .row
+    {flex-direction: column;}
+
+}

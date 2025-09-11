@@ -1,0 +1,55 @@
+<!-- DOCUMENT OBJECT MODEL : WE WILL WRITE BOTH HTML AND JAVASCRIPT CODE IN A SINGLE FILE: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Something is comming</p>
+    <p>someone is going </p>
+    <p>noooooo</p>
+    <p class="highlight">some text</p>
+    <p class="highlight">text</p>
+    <p class="highlight">what is this?</p>
+    <div>
+        <button onclick="alert('Good day!🥳')">Smash this button</button>  <!-- onclick is an event fired by html and performed by javascript-->
+        <button onclick="greet()">click this button</button>  <!-- onclick is an event fired by html and performed by javascript--><!--In this called a user defined a function-->
+    </div>
+    <div>
+         <img src="images/image.jpg" alt="image" width="300px" height="300px" id="image">
+    </div>
+</body>
+<script>
+    console.log(document)   
+    function greet(){
+        alert("Good morning!")
+    }
+    // this is tag selectors
+    var  myText=document.getElementsByTagName("p")
+    console.log(myText)
+    console.log(myText[0])
+    console.log(myText[0].innerHTML)
+
+    //this is class selector
+    var myte=document.getElementsByClassName("highlight")
+    console.log(myte)
+    console.log(myte[0])
+    console.log(myte[0].innerHTML)
+    //ID SELECTOR
+
+
+
+    //query selctor
+    var x=document.querySelector("p")
+    console.log(x)
+
+    //IMAGE:
+
+    //event listener: performing multiple operations on a single tag
+   
+    
+    
+</script>
+</html>

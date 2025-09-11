@@ -1,0 +1,326 @@
+html:used to represent a webpage
+css: for styling and formating 
+extensions: ??
+Start of HTML:->
+default page/ or home page -> browser gives -> index.html file
+utf: unicode transformation formate (ex.UTF-8) default for a system
+viewport: ??
+
+
+.
+.
+.
+HTML headings: are used to show text with pre-defined size.(h1-h6)
+HTML paragraph: are used to show text with default size. (p)
+<p>lorem</p> : lorem: used to generate dummy text/paragraph on a webpage.
+--------------------------------------------------------------------------------------------------------------------------
+DAY:2
+concepts of css: Css is a styling language used to addd style toa webpage
+3 methods:
+inline:style directly added to html element
+internal: styles defined at the head section of the document 
+external: style defined in a seperate file
+syntax:
+style ="property_name : value;" 
+CSS Selectors:
+mainly 6 types of Selectors :
+
+--> tag selectors:
+ex: h2{
+    property_name:value;
+      }
+
+-->class selector:
+
+represent class by dot (.)
+.class_name{
+    property_name: vlaue;
+
+}
+ex: <h1 class="highlight">Lorem</h1>
+    <h2 class="highlight">Lorem, ipsum dolor.</h2>
+    <h3 class="highlight">Lorem ipsum dolor sit.</h3>
+
+    in CSS file:
+    .highlight{
+        background-color:black;
+        color:yellow;
+    }
+
+--> ID selectors:
+represented by hashtag(#)
+#id_name{
+    property_name:value;
+}
+
+ex: 
+    <p id="p1">paragraph 1</p>
+    <p id="p1">paragraph 2</p>
+    <p id="p2">paragraph 3</p>
+    <p id="p2">paragraph 4</p>
+
+
+-->Universal selectors:
+used to add style to whiole page:
+*{
+    property_name:vlaue;
+
+}
+
+--> psudo elements
+--> pseudo class slectors 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+block elements, inline elements
+<div><\div>: block element
+<span><\span>: inline 
+
+why reactjs:
+#Explain box model???
+
+margin left/ right
+width
+justify content: space-between;
+
+ASSIGNMENT: 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+DAY-3
+pseudo class:
+p-class : in css are used to select the elements based on the position within the document tree, without the need for adding extra classes or javascript.
+
+
+even nd odd pseudo class selctor: 
+div p:nth-child(even){
+    property_name: value;
+
+}
+div p:nth-child(odd){
+    property_name: value;
+}
+
+ pseudo element:
+ p-element-->in css is used to style a specific part of an element
+
+ selector::pseudo-element{
+    property_name:vlaue;
+
+}
+
+ex:
+h1::first-letter
+{
+    color: red;
+    font-size:3cm;
+}
+h1::second-letter{
+    color:red;
+    font-size:4cm;
+}
+
+Before/after pseudo element:
+p::before{
+    content:"NOTE";
+    color:red;
+
+}
+p::after{
+    content:"Read More";
+    color: blue;
+}
+
+list marker: 
+li::marker{
+    color:red;
+}
+Assignment: draw a table and colors of rows should be alternate.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+js-->> Sequence programming
+
+
+JAVASCRIPT: it is a client side script before nodejs
+first validate the info on client side the sent to server side
+-->cross platform, object oriented scripting language
+-->used to make webpages interactive(ex:having animations,clickable buttons,popup menu, etc)
+--> contains a standard library of object: arrays ,date , math.
+--> and a core set of language elements such as : operators, control structure,statements
+
+Client side js : --> controls a browser and its document object model(DOM).
+ex: client side extensions allows an application to place an elements on an HTML from and respond to user event such a  mouse click, form input, and page navigatn
+
+Server side js: -->versions of js such as nodejs, 
+-->running script on a server
+ex: serverside extensions allows an application to communicate with a database or perform file manipulations on  server side.
+
+Adding js to our webpage:
+embedded the script b/w a pair of <script> <\script> tag.
+
+syntax:
+ document.write("Bad Day:("))
+    // we can stuff html also 
+    
+document.write("<h1>Hello SIR stuffed in js<\h1>")
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+instead of writing document we prefer console:
+console : display output in console area provided by browser.
+ex:
+console.log("hello")
+
+variables:-->named memory locations used to hold data
+or
+-->symbolic name for a value in our app.
+-->variable name is called identifiers
+Rules for var name: 
+1.identifier start with --> a letter, underscore(_), or dollor sign($)
+2.subsequent characters can also be digits(0-9).
+3.Js is a case sensitive.
+4.Letter can be included from(a-z) and (A-Z).
+
+FOR INITIALIZING A VARIABLE:
+1.var 
+ex: var variable_name=value;
+
+2.let 
+3.contant
+
+data: raw information/ or unprocessed info/ raw facts 
+information: processed form of data 
+
+DATATYPES:
+-->numbers can be -ve / +ve
+-->int / float
+--> collectionof character,numbers or special characters 
+--> string
+-->boolean
+
+OPERATORS:
+for basic calculation:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DAY-5:
+DECISION MAKING CONDITION:
+If else statements
+
+if..else if
+
+**CONDITIONAL RENDERING
+
+logical operator: used to add the compound conditions
+1.AND(&&): works when all the conditions are true.
+2.OR(||): works if one condition is true
+3.NOT(!): reversing the condition
+4.unary:
+5.binary
+6.Ternery:
+syntax:-->( condition)?true:false
+ex: for finding min or max out of any number 
+
+------------------------------------------------------------------------
+LOOPS OR ITERATION: 
+To repeat a block of code for required numbers
+LOOPS:
+1.Pretest(while and for):iterates if condition is true
+2.Post test(do..while): executes atleast once
+
+POINTS TO BE NOTED IN LOOPS:
+1.START VALUE 
+2.END VALUE
+3.INCREMENT/DECREMENT 
+
+WHILE LOOP:
+
+-----------------------------------------------------------------------
+DAy-6
+
+Print first 20 odd natural numbers and find their sum.
+
+
+do...while(post test loop executes at least once)
+BREAK STATEMENT:
+in switch case break statement is used to exit after execution for true case
+--> break statement is used to exit from a loop
+CONTINUE STATEMENT:
+-->used to skip a part of a loop 
+
+H.W. (Done)
+1.Nested for loop 
+2.Right triangle star pattern
+3.given day number print week day for 1 to 5 and week end for 6 and 7
+given month number print number of days in particular 
+
+-----------------------------------------------------------------------
+DAY-7:
+// for..of loop can be used to iterate over an array.
+ex:
+for(number of num)
+{
+    console.log(number)
+}
+
+
+H.W.
+find transpose (DONE)
+find sum of diagonal (done)
+find sum of two array ()
+find product of two array
+
+CONFIRM BOX
+JAVA SCRIPT DIALOG BOXES:
+function components it's a java script function
+//JAVASCRIPT FUNCTION: A function is an independent block of codre that perform a specific task
+function function_name(){  //defining function
+    //code
+}
+function_name()
+
+or
+function function_name(parameter ){  //defining function
+    //code
+}
+function_name(argument) //function calling
+
+-----------------------------------------------------------------------
+DOM:(DOCUMENT OBJECT MODEL)
+-->React js : combines both html and javascript
+-->document: represents a webpage
+-->object: all the tags displayed in console
+
+#JAVASCRIPT EVENTS in DOM:
+
+mouseover
+mouseout
+onclick
+
+
+methods for selecting data:
+tagname
+id
+query selector 
+
+-----------------------------------------------------------------------
+DAY-9:
+HTML forms:
+
+javascript es6(ECMAScript 6)(European computer maniufactures association script)
+also known as ECMAScript2015 
+is the sixth edition of javasript introduced in june 2015
+
+#Difference between var, let and cont??
+
+//template literal:
+${}
+
+
+
+
+
+functions:
+Named function
+Anonmous function
+arrow function 

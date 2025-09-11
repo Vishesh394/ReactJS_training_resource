@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/image.jpg" alt="image" id="image" width="300px" height="300px">
+</body>
+<script>
+     var image=document.getElementById("image")
+    image.addEventListner("mouseover", function(){
+        image.setAttribute("src","images/image.jpg")
+    })
+    image.addEventListner("mouseout",function() {
+        image.setAttribute("src","images/john-towner.jpg")
+        
+    })
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+div p::fist-child{
+    color: yellow;
+    background-color: black;
+}
+.btn-primary{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 5px 25px; /*top- bottom*//*left-right*/
+    transition: 1s;
+}
+.btn-primary:hover{
+    background-color: black ;
+    cursor: pointer;
+}
+h1::first-letter
+{
+    color: red;
+    font-size:3cm;
+}
+p::before{
+    content:"NOTE";
+    color:red;
+
+}
+p::after{
+    content:"Read More";
+    color: blue;
+}
