@@ -298,10 +298,12 @@ mouseout
 onclick
 
 
-methods for selecting data:
-tagname
-id
-query selector 
+Main methods for selecting elements(data) from the DOM:
+1.getElementById("id") --> select element by Id
+2.getElementbyClassName("class") --> select all elements with a class(retuns HTML collection)
+3.getElementByTagName("tag") -->selects all elements with a given tag.
+4. querySelector("cssselector") --> selects the first matching element(CSS-style selector)
+5.querySelectorAll("cssselector") --> selects all matching elements(returns a NodeList)
 
 -----------------------------------------------------------------------
 DAY-9:
@@ -312,15 +314,59 @@ also known as ECMAScript2015
 is the sixth edition of javasript introduced in june 2015
 
 #Difference between var, let and cont??
-
-//template literal:
+| Feature        | `var`                 | `let`                       | `const`                     |
+| -------------- | --------------------- | --------------------------- | --------------------------- |
+| **Scope**      | Function-scoped       | Block-scoped  "inside {}"   | Block-scoped  "inside {}"   |
+| **Re-declare** | ✅ Allowed            | ❌ Not allowed            | ❌ Not allowed               |
+| **Re-assign**  | ✅ Allowed            | ✅ Allowed                | ❌ Not allowed               |
+| **Hoisting**   | Hoisted → `undefined` | Hoisted but not initialized | Hoisted but not initialized |
+| **Best Use**   | Legacy code only      | Variables that change       | Constants / fixed values    |
+In modern JS:
+-->Use let for variables that will change.
+-->Use const for values that won’t change.
+-->Avoid var (old, buggy behavior).
+# template literal:
 ${}
+ex:
+console.log(`this is template literal:${calling a function here}`)
 
+#functions:
+1.Named function: 
+-->function with name
+-->can be called by using its name
+-->easier to debug coz fnction name appears in stack traces\
+ex:
+function greet()   //named function definiton.
+{
+    console.log("hello this is definition of named function")
+}
+//calling
+greet()
 
+2.Anonmous function:
+-->function without a name
+-->usually used as value--> assigned to a variable , passed a argument,etc
+-->callbacks??(ask to sir)
+ex:
+//anonmous function assigned to a variable.
+let greet= function(){
+    console.log("hello this is anonmous!")
 
+}
+greet() //
+3.Arrow function:
+-->shorter way to write a function
+-->always anonmous
+-->modern ES6+ model of javascript introduced in 2015
+syntax:
+let x=() => {}
+ex:
+i. let greett=()==>{
+    console.log("hello,Arrow!")
+}
+greet()
 
-
-functions:
-Named function
-Anonmous function
-arrow function 
+ii.
+//one liner return 
+let add(a,b)=>a+b  
+console.log(add(5,3))

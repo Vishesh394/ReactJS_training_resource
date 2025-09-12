@@ -7,37 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Something is comming</p>
+    <!-- <p>Something is comming</p>
     <p>someone is going </p>
     <p>noooooo</p>
     <p class="highlight">some text</p>
     <p class="highlight">text</p>
-    <p class="highlight">what is this?</p>
+    <p class="highlight">what is this?</p> -->
     <div>
-        <button onclick="alert('Good day!🥳')">Smash this button</button>  <!-- onclick is an event fired by html and performed by javascript-->
-        <button onclick="greet()">click this button</button>  <!-- onclick is an event fired by html and performed by javascript--><!--In this called a user defined a function-->
+         <!-- onclick is an event fired by html and performed by javascript-->
+        <button onclick="alert('Good day!🥳')">Smash this button</button> 
+        <!-- onclick is an event fired by html and performed by javascript--><!--In this called a user defined a function-->
+        <button onclick="greet()">click this button</button>  
     </div>
-    <div>
+    <!-- <div>
          <img src="images/image.jpg" alt="image" width="300px" height="300px" id="image">
+    </div> -->
+    <div>
+        <h1 id="main-title">Welcome to DOM selection</h1>
+        <p class="info">Paragraph1</p>
+        <p class="info">Paragraph2</p>
+        <p class="box">Box1</p>
+        <p class="box">Box2</p>
     </div>
 </body>
 <script>
-    console.log(document)   
+    /*console.log(document)   
     function greet(){
         alert("Good morning!")
-    }
-    // this is tag selectors
-    var  myText=document.getElementsByTagName("p")
-    console.log(myText)
-    console.log(myText[0])
-    console.log(myText[0].innerHTML)
+    }*/
+    // get data or element using id selecto
+  let title=document.getElementById("id")
+  console.log("getElementById:",title.innerText)
+    //get element or data by class name
+    let infos=document.getElementsByClassName("info")
+    console.log("Element by class name:", infos[0].innerText)
 
-    //this is class selector
-    var myte=document.getElementsByClassName("highlight")
-    console.log(myte)
-    console.log(myte[0])
-    console.log(myte[0].innerHTML)
-    //ID SELECTOR
+   //get by query selector 
+   
 
 
 
