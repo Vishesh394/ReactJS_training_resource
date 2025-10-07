@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    //rest parameter:
+    function show(...rest)
+    {
+        console.log(rest)
+    }
+    show(10,20,30,3,2,1)
+
+function show(a,b,...rest)
+{
+    console.log(a)
+    console.log(b)
+    console.log(...rest)
+
+}
+show(10,20,30,2,3,5)
+
+//spread operator:
+let num=[10,20,32,44,52]
+console.log([num,99,77])
+console.log([num,])
+
+
+//Objects in javascript:
+const person={
+    firstName:"Rohan",
+    lastName:"Ganguli",
+    email:"rohan@gmail.com",
+    mobile:"123456789"
+    
+}
+console.log(`First name: ${person.firstName}`)
+console.log(`last  name: ${person.lastName}`)
+console.log(`Email: ${person.email}`)
+console.log(`Mobile: ${person.mobile}`)
+</script>
+</html>
+
+
+
+

@@ -6,10 +6,12 @@ default page/ or home page -> browser gives -> index.html file
 utf: unicode transformation formate (ex.UTF-8) default for a system
 viewport: ??
 
-
-.
-.
-.
+..
+..
+..
+..
+..
+..
 HTML headings: are used to show text with pre-defined size.(h1-h6)
 HTML paragraph: are used to show text with default size. (p)
 <p>lorem</p> : lorem: used to generate dummy text/paragraph on a webpage.
@@ -287,7 +289,7 @@ function_name(argument) //function calling
 
 -----------------------------------------------------------------------
 DOM:(DOCUMENT OBJECT MODEL)
--->React js : combines both html and javascript
+-->React js : combines both html and javascript(Frontend UI)
 -->document: represents a webpage
 -->object: all the tags displayed in console
 
@@ -305,7 +307,7 @@ Main methods for selecting elements(data) from the DOM:
 4. querySelector("cssselector") --> selects the first matching element(CSS-style selector)
 5.querySelectorAll("cssselector") --> selects all matching elements(returns a NodeList)
 
------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 DAY-9:
 HTML forms:
 
@@ -370,3 +372,224 @@ ii.
 //one liner return 
 let add(a,b)=>a+b  
 console.log(add(5,3))
+
+-----------------------------------------------------------------------------------------------------------------------
+DAY 10:
+#REST PARAMETER:(...) -->in js
+-->lets us to represent an indefinite number of arguments as an array.
+-->useful when we don't know beforehead how many argument will be passed to a function.
+syntax:
+function functionName(...restParameter){
+    //restparameter is an array
+}
+NOTE:(1)Only one rest parameter is allowed in a function
+(2)it must be the last parameter
+ex:
+function wrong(...nums, last) { } // ❌ Error
+
+
+
+
+
+#javascript objects :
+-->something has property and corresponding value.
+-->syntax:
+const onject_name={
+    property: "value",
+}
+
+
+Nodejs: is a cross platform gives environment for javascript run
+V8 ENGINE: 
+
+----------------------------------------------------------------------------------------------------------------
+DAY12
+install npm 
+Bootstrap:
+
+list = array 
+
+default index
+
+----------------------------------------------------------------------------------------------------------------
+DAY13:
+adding images in table using bootstrap
+
+----------------------------------------------------------------------------------------------------------------
+DAY 14:
+## functional Components: two child components
+Admin pannel and login form
+
+adminpanel.jsx and loginform.jsx are the child components of app.jsx
+
+#AdminPanel.jsx
+code:
+function AdminPanel()
+{
+    return (
+        <div>
+            <h1>Welcome Admin</h1>
+        </div>
+    )
+}
+export default AdminPanel
+
+
+
+#LoginForm.jsx
+code:
+function LoginForm(){
+    return 
+    <div>
+        <h1>
+            User Login
+        </h1>
+    </div>
+}
+export default LoginForm
+
+
+App.jsx
+code:
+//conditional rendering:
+
+
+#React props(i.e. properties):
+passing argument: passing each value individually
+##objects in react
+try to pass a object as instead of individual value
+
+Destructuring:
+
+
+today's Task:
+product.jsx(component)
+productDetails(object)
+properties of product(like product id, product name,productIteam, unit price quantity)
+print a bill after 10% discount(final payment)
+
+------------------------------------------------------------------------------------------------------------------
+REACT HOOKS:
+allow function components to have access to state.
+STATE: generally refers to data or properties that need to tracking in an application.
+
+REACT useState Hook:
+allows us to track state(datavor properties) in a fucntion component.
+
+THE useState PROVIDES:
+1.A state variable to retain the data between renders.
+2. a state setter function to update the variable and trigger react to render the components.
+
+WHY useState:
+
+
+Component(folder) --> 
+User.jsx
+
+
+then 
+App.jsx
+import User from "./components/User"
+function App()
+{
+  return <div>
+    <User/>
+  </div>
+}
+export default App
+
+
+#update user data in the react 
+---------------------------------------------------------------
+#React Forms:
+Folder (components)--> ReactForms.jsx
+in App.jsx
+
+function App(){
+ return (<div>
+      <ReactForms/>
+  </div>)
+}
+export default App
+-----------------------------------------------
+Utilities from Bootstrap:
+-Spacing 
+forms:
+ -Form control 
+ -select
+ -object
+
+Containers
+#objects and spread operator:
+#Reading data individually and reading data with the help of an object
+-------------------------------------------------------------------------
+# DAY16:
+
+nodemon:
+What is Synchronous programming? 
+#Synchronous:Single thread ()
+in synchro programming , code run line by line. Each line waits for the previous one to finish before executing.
+ex:
+function step1(){
+    console.log("Step1: Starting");
+}
+function step2(){
+    console.log("Step2: Runnning");
+}
+function step3(){
+    console.log("Step3: End");
+}
+
+ Asynchronous: 
+            1.call back
+            2.Promise  (*imp)
+            3.Asyn await (*imp)
+    1.what is Call back: is a function passed as an argument to anothe rfunction that gets called later. usually after some kind of operation.
+
+        --> anonmous function callback
+
+        --> arrow function callback
+javascript setTimeout() method executes a block of code after the specified time.
+this method executes the code only once
+
+*Set time out using callback: holding a function for a certain amount of time
+--------------------------------------------------------------------------------------------------------------------------------------------
+DAY-17:
+# [conditional rendering , react props, use_state (mutable),use effect, asyn await].
+
+
+2. Promise: A promise in js is a way to handle asynchronous operations
+            It represents a value that may be available now, later or never.
+            A promise can be in on of 3 states:
+            1. pending - the operation is still ongoing(initial state)
+            2. fulfilled (resolved) -operation completed succes(promise return values handled by '.then()')
+            3.Rejected 
+--chaining promise
+
+3. asyn await: 
+asyn make sa function return a promise 
+await pause the execution inside an asyn function until the proomise is resolved or rejected.
+
+async function greet(){
+    retun "Hello!";
+}
+const result =await greet()
+const.log(result)
+
+
+#SOME FREE API WEBSITES:
+1. fakestoreapi.com
+2.jsonplaceholder.typicode.com
+
+-->DAY12 -> Project1 -> public ->src -> components -> fetch_api.jsx
+
+-- useEffect Hook: to perform side effect in our components.
+some example:
+-fetch data from API
+-directly updating the DOM 
+
+
+
+task: create an example for subscription 
+unsubscribe
+
