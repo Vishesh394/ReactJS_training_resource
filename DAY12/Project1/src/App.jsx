@@ -14,7 +14,9 @@ import LoginForm from "./components/LoginForm"
 import Person from "./components/Person"
 import User from "./components/User"
 import ReactForms from "./components/ReactForms"
-import FetchApi from "./components/FetchApi"
+import ReactHook from "./components/ReactHook"
+import React from "react"
+import ProductFetch from "./components/ProductFetch"
 
 
 
@@ -181,7 +183,7 @@ import FetchApi from "./components/FetchApi"
 export default App */
 
 //Fetch API
-function App(){
+/*function App(){
   return (
     <div>
       <FetchApi/>
@@ -189,9 +191,29 @@ function App(){
   )
 }
 export default App;
+*/
 
 
+// run effect only on mount(once)
+/*function App(){
+  return (
+  <div>
+    <ReactHook/>
+  </div>
+)
+}
+export default App; */
 
+
+// fetching api of products
+function App(){
+  return(
+    <div>
+      <ProductFetch/>
+    </div>
+  )
+}
+export default App;
 
 
 

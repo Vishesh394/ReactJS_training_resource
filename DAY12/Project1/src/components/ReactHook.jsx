@@ -1,8 +1,9 @@
-function FetchApi(){
+import{useEffect, useState} from "react"
+function ReactHook(){
     const [count,setCount]=useState(0)
     useEffect(()=>{
         console.log(`count:${count}`) //if we wnt to fetch the data from ap add here in console.log
-    })
+    },[count]);
     const handleSubmit=()=> {
         setCount(count+1)
     }
@@ -16,4 +17,4 @@ function FetchApi(){
 ) 
     
 }
-export default FetchApi;
+export default ReactHook;

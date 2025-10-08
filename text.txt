@@ -545,7 +545,6 @@ function step3(){
             2.Promise  (*imp)
             3.Asyn await (*imp)
     1.what is Call back: is a function passed as an argument to anothe rfunction that gets called later. usually after some kind of operation.
-
         --> anonmous function callback
 
         --> arrow function callback
@@ -593,3 +592,10 @@ some example:
 task: create an example for subscription 
 unsubscribe
 
+----------------------------------------------------------------------------------------------------
+DAY17:
+assignment: making a webpage with projects listed and make a drop down fro filtering the products:
+make a component: DAY12 > Project1> src > components > ProductFilter
+
+#useRef hook 
+usecontext
