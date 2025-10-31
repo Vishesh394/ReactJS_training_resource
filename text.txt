@@ -597,5 +597,65 @@ DAY17:
 assignment: making a webpage with projects listed and make a drop down fro filtering the products:
 make a component: DAY12 > Project1> src > components > ProductFilter
 
-#useRef hook 
-usecontext
+--------------------------------------------------------------------------------------------
+DAY18:
+componets(folder) > RefHook
+#useRef hook :
+utilizations of useRef hook:
+1.For accesing DOM for element.
+2. Storing mutsble values without re-rendering:(or to access mutable values)
+3. Tracking previous state: 
+4.Avoiding unnecessary effect on first render:
+
+#useMemo hook: 
+return a memorized value(it like caching a value so that it doesnot need to be recalculated)
+the useMemo hook only runs when on of its dependencies gets updated.
+this can improve the performance of the application.
+
+components(folder) -> MemoHook.jsx
+
+----------------------------------------------------------------------------------
+2nd last session:
+useReducer: react hook- gives us more control over state management than useState.
+            make it easier to manage complex states
+            basic structure:
+            const[state,dispatch]=useReducer(reducer,initialState)
+
+            i.accepts a reducer fnction and an initialState as parameter.
+            ii.its reducer function accepts a state and action as parameter.     
+
+            
+            const reducer=(state,action)=>{
+                //logic to update state with value from the action.
+                return updatedState
+            }
+
+            action parameter: helps to define how to change our state.
+                                it can be a single value or an object with a label(type) and some data to update the state(payload).
+                                it gets its data from useReducer's dispatched
+                                it ge
+
+
+Redux : make a global 
+
+//ASSIGNMENT: Shopping cart using useReducer hook 
+            increase: add to cart
+            decrease: delete from the cart.
+
+
+
+//CUSTOM HOOKS:
+is a js function whose stat with "use" and may call other hooks inside it.
+- allows you to extract reuseable logic from components(like useState, useEffect,etc) into a seperate function  
+
+useFetch.js(in component folder)
+import{useEffect,useState} from react
+
+---------------------------------------------------------------------------------------------------------------
+#ROUTING IN REACT:
+-redirects users to different pages based on their action or requests.
+-in react routing an external library called react routing is used.
+npm i react-router-dom  --> to install router --> after install info stored in package.json file
+
+now,
+src(folder) -> pages(folder) -> Home.jsx

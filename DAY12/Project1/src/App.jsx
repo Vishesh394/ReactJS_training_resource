@@ -15,8 +15,10 @@ import Person from "./components/Person"
 import User from "./components/User"
 import ReactForms from "./components/ReactForms"
 import ReactHook from "./components/ReactHook"
-import React from "react"
+import React, { useReducer } from "react"
 import ProductFetch from "./components/ProductFetch"
+import RefHook from "./components/RefHook"
+import MemoHook from "./components/MemoHook"
 
 
 
@@ -206,18 +208,190 @@ export default App; */
 
 
 // fetching api of products
-function App(){
+// Assignment questions: 
+/*function App(){
   return(
     <div>
       <ProductFetch/>
     </div>
   )
 }
+export default App;*/
+
+// RefHook : 
+// 1.
+/*
+function App(){
+  return(
+    <div>
+      <RefHook/>
+    </div>
+  )
+}
+export default App;
+*/
+
+// 2.
+// function App(){
+//   return(
+//     <div>
+//       <RefHook/>
+//     </div>
+//   )
+// }
+// export default App;
+/*
+function App(){
+  return(
+    <div>
+      <MemoHook/>
+    </div>
+  )
+}
+export default App;
+*/
+
+
+//use Reducer hook of react hook
+
+/*
+function App(){
+  const initialState=0;
+  const reducer=(state,action)=>{
+    let updateState=state+action;
+    return updateState;
+  }
+  const[state,dispatch]=useReducer(reducer, initialState)
+  return(
+    <div>
+      <h1>{state}</h1>
+      <button onClick={()=>dispatch(1)}>Increase</button>
+    </div>
+  )
+}
+export default App
+*/
+
+//using switch case in useReducer for increasing an decreasing by giveing payload.
+/*
+
+function App(){
+  const initialState=0;
+  const reducer=(state,action)=>{
+  switch(action.type){
+    case'add':
+      return state+action.payload
+    case 'subtract':
+      return state-action.payload
+    case 'reset':
+      return initialState
+    default:
+      throw newError()
+  }    
+  }
+  const[state,dispatch]=useReducer(reducer, initialState)
+  return(
+    <div>
+      <h1>{state}</h1>
+      <button onClick={()=> dispatch({type:'add',payload:1})}>Increase</button>
+      <button onClick={()=> dispatch({type:'subtract',payload:1})}>Decrease</button>
+    </div>
+  )
+}
+export default App
+*/
+
+//ASSIGNMENT 
+/*
+function App() {
+  const initialState = {
+    input: "",
+    items: [],
+  };
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case "SET_INPUT":
+        return { ...state, input: action.payload };
+
+      case "ADD_ITEM":
+        if (state.input.trim() === "") return state;
+        return {
+          ...state,
+          items: [...state.items, state.input],
+          input: "",
+        };
+
+      case "DELETE_ITEM":
+        return {
+          ...state,
+          items: state.items.filter((_, i) => i !== action.payload),
+        };
+
+      default:
+        return state;
+    }
+  };
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  return (
+    <div>
+      <h1>Shopping Cart</h1>
+
+      <input
+        type="text"
+        value={state.input}
+        onChange={(e) =>
+          dispatch({ type: "SET_INPUT", payload: e.target.value })
+        }
+        placeholder="Enter item"
+      />
+
+      <button onClick={() => dispatch({ type: "ADD_ITEM" })}>ADD</button>
+
+      <ul>
+        {state.items.map((item, index) => (
+          <li key={index}>
+            {item}{" "}
+            <button onClick={() => dispatch({ type: "DELETE_ITEM", payload: index })}>
+              DELETE
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
+*/
+
+//using handle statements for doing this task instead of switch statement.
+// function App()
+// {
+//   const
+//   input:'',
+//   items[]
+
+// }
+// const handle change
+// const handle submit
+// const HandleChange=()=>{
+
+// }
+
+
+//Custom hooks
+import Posts from "./Posts"
+function App(){
+  return(
+    <div>
+      <Posts/>
+    </div>
+  )
+}
 export default App;
 
 
-
-
-
-
-
+//---------------------------------------------------------------------------------------------------------------------
